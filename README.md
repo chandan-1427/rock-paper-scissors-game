@@ -12,4 +12,4 @@ A clean and fun rock-paper-scissors game built with HTML, Tailwind CSS, and Java
 Just open `index.html` in a browser.
 
 ## Author
-DAKKA CHANDAN(https://github.com/your-github-chandan-1427)
+DAKKA CHANDAN(https://github.com/chandan-1427)
