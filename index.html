@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center px-4 text-center">
+
+  <h1 class="text-5xl font-extrabold text-purple-500 mb-4 drop-shadow-lg">Rock, Paper & Scissors</h1>
+  <p class="text-2xl text-gray-300 mb-8 font-medium">Choose your move:</p>
+
+  <div class="flex gap-8 mb-10">
+    <button onclick="playGame('rock')" class="text-6xl hover:scale-125 transition duration-300 transform hover:text-yellow-300">✊</button>
+    <button onclick="playGame('paper')" class="text-6xl hover:scale-125 transition duration-300 transform hover:text-yellow-300">✋</button>
+    <button onclick="playGame('scissors')" class="text-6xl hover:scale-125 transition duration-300 transform hover:text-yellow-300">✌️</button>
+  </div>
+
+  <div class="bg-gray-800 p-6 rounded-xl shadow-md w-full max-w-md mb-6">
+    <p id="choice" class="text-xl text-white font-semibold mb-3">Your choice: - | Computer's choice: -</p>
+    <p id="result" class="text-2xl font-bold text-indigo-300">Result: -</p>
+  </div>
+
+  <div class="bg-indigo-600 p-6 rounded-xl shadow-lg w-full max-w-md mb-6">
+    <h2 class="text-2xl font-bold mb-2 text-white tracking-wide">Score Board</h2>
+    <p id="score" class="text-xl font-medium text-gray-100">Wins: 0 &nbsp;&nbsp; Losses: 0 &nbsp;&nbsp; Draws: 0</p>
+  </div>
+
+  <button onclick="resetGame()" class="bg-red-500 hover:bg-red-600 text-white text-lg font-semibold py-3 px-6 rounded-full transition duration-300 shadow-lg">
+    Reset Score Board
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

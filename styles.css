@@ -1,0 +1,11 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.animate-bounce-once {
+  animation: bounce 0.5s ease;
+}
